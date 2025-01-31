@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MedBook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedBook</a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="book.html" class="nav-link">Book Slot</a>
+                <a href="#" class="nav-link">Feedback</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="booking-section">
+                <h1>Book an Appointment</h1>
+                <p class="subtitle">Fill out the form below to schedule your appointment with one of our specialists.
+                </p>
+
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialty">Specialty</label>
+                        <select id="specialty" name="specialty" required>
+                            <option value="">Select a specialty</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="doctor">Doctor</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="">Select a doctor</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hospital">Hospital</label>
+                        <select id="hospital" name="hospital" required>
+                            <option value="">Select a hospital</option>
+                            <option value="central-hospital">Central Hospital</option>
+                            <option value="city-medical">City Medical Center</option>
+                            <option value="memorial">Memorial Hospital</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Appointment Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <button type="submit" class="button primary full-width">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
